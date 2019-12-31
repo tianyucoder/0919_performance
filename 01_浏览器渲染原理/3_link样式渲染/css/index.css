@@ -52,7 +52,7 @@ img{display: block;}
 #content > .list > .works  .works2 > .item .mask .icon{width: 32px;height: 34px;margin: 0 auto;margin-top: 10px;
     transition:1s background-position;
 }
-#content > .list > .works  .works2 > .item img{transition:1s transform;}
+#content > .list > .works  .works2 > .item img #demo{transition:1s transform;}
 
 
 #content > .list > .works  .works2 > .item .mask .icon:hover{background-position:0 -35px ;}
