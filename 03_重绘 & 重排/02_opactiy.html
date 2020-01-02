@@ -6,12 +6,12 @@
 		<title></title>
 		<style type="text/css">
 			#test{
-				visibility: visible;
-				/*opacity: 1;*/
+				/*visibility: visible;*/
+				opacity: 1;
 				width: 100px;
 				height: 100px;
 				background: pink;
-				/*will-change: transform;*/
+				will-change: transform;
 			}
 		</style>
 	</head>
@@ -23,8 +23,8 @@
 	<script type="text/javascript">
 		var testNode = document.querySelector("#test");
 		setTimeout(function(){
-			testNode.style.visibility="hidden";
-			//testNode.style.opacity=0;
+			//testNode.style.visibility="hidden";
+			testNode.style.opacity=0;
 		},2000);
 		
 	</script>
