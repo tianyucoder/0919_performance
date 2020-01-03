@@ -20,6 +20,16 @@
 <!--定时器动画-->
 <script type="text/javascript">
 
+  let test = document.getElementById('test')
+  let index = 0
+  let timeId = setInterval(()=>{
+    index ++
+    test.style.transform = `translateX(${index}px)`
+  },16)
+  setTimeout(()=>{
+    clearInterval(timeId)
+  },2000)
+
 
 </script>
 </body>
