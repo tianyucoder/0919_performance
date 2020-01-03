@@ -22,6 +22,11 @@
 
     * */
 
+    let input = document.getElementById('input')
+    input.onblur = ()=>{
+      localStorage.setItem('data',input.value)
+    }
+
 
 </script>
 </body>

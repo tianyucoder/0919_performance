@@ -19,6 +19,17 @@
   *   需求：在鼠标滚轮滚动的时候，每隔2秒钟，打印一次
   * */
 
+  let isCanLog = true
+  document.onscroll = ()=>{
+    if(isCanLog){
+      console.log(1)
+      isCanLog = false
+      setTimeout(()=>{
+        isCanLog = true
+      },2000)
+    }
+  }
+
 
 </script>
 </body>

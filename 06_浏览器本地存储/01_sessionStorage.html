@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sessionStorage测试</title>
+</head>
+<body>
+
+<button id="btn1">保存数据</button>
+<button id="btn2">读取数据</button>
+<button id="btn3">删除数据</button>
+<button id="btn4">清空数据</button>
+
+<script type="text/javascript">
+
+  let btn1 = document.getElementById('btn1')
+  let btn2 = document.getElementById('btn2')
+  let btn3 = document.getElementById('btn3')
+  let btn4 = document.getElementById('btn4')
+
+  let person1 = {name:'wade',age:41}
+  let person2 = {name:'kobe',age:40}
+
+  btn1.onclick = ()=>{
+    sessionStorage.setItem('person1',JSON.stringify(person1))
+    sessionStorage.setItem('person2',JSON.stringify(person2))
+  }
+
+  btn2.onclick = ()=>{
+    console.log(JSON.parse(sessionStorage.getItem('person1')))
+  }
+
+  btn3.onclick = ()=>{
+    sessionStorage.removeItem('demo')
+  }
+
+  btn4.onclick = ()=> {
+    sessionStorage.clear()
+  }
+
+
+</script>
+</body>
+</html>
